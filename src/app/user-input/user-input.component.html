@@ -1,0 +1,14 @@
+<div class="border border-2 border-secondary">
+  <div class="bg-info text-center">Exercise 0</div>
+
+  <div class="row mt-2 mb-2 p-2">
+    <div class="col">
+      <label for="word" class="col-form-label">Write a word:</label>
+      <input #userInput type="text" id="word" formControlName="word" class="form-control">
+    </div>
+  </div>
+  <div class="row mt-2 mb-2 p-2">
+    <button (click)="onSubmit(userInput.value)" class="btn btn-primary">Submit</button>
+  </div>
+
+</div>
